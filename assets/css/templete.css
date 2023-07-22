@@ -1,0 +1,217 @@
+.mt5 {
+    margin-top: 0.5rem;
+}
+.mt8 {
+    margin-top: 0.8rem;
+}
+.mt10 {
+    margin-top: 1rem;
+}
+.mt15 {
+    margin-top: 1.5rem;
+}
+.mt20 {
+    margin-top: 2rem;
+}
+.mt25 {
+    margin-top: 2.5rem;
+}
+.mt30 {
+    margin-top: 3rem;
+}
+.mt70 {
+    margin-top: 7rem;
+}
+
+.mb5 {
+    margin-bottom: 0.5rem;
+}
+.mb10 {
+    margin-bottom: 1rem;
+}
+.mb15 {
+    margin-bottom: 1.5rem;
+}
+.mb20 {
+    margin-bottom: 2rem;
+}
+.mb25 {
+    margin-bottom: 2.5rem;
+}
+.mb30 {
+    margin-bottom: 3rem;
+}
+
+.ml5 {
+    margin-left: 0.5rem;
+}
+.ml10 {
+    margin-left: 1rem;
+}
+.ml15 {
+    margin-left: 1.5rem;
+}
+.ml20 {
+    margin-left: 2rem;
+}
+.ml25 {
+    margin-left: 2.5rem;
+}
+.ml30 {
+    margin-left: 3rem;
+}
+.ml60 {
+    margin-left: 6rem;
+}
+
+.mr5 {
+    margin-right: 0.5rem;
+}
+.mr10 {
+    margin-right: 1rem;
+}
+.mr15 {
+    margin-right: 1.5rem;
+}
+.mr20 {
+    margin-right: 2rem;
+}
+.mr25 {
+    margin-right: 2.5rem;
+}
+.mr30 {
+    margin-right: 3rem;
+}
+
+.pt5 {
+    padding-top: 0.5rem;
+}
+.pt10 {
+    padding-top: 1rem;
+}
+.pt15 {
+    padding-top: 1.5rem;
+}
+.pt20 {
+    padding-top: 2rem;
+}
+.pt25 {
+    padding-top: 2.5rem;
+}
+.pt30 {
+    padding-top: 3rem;
+}
+
+.pb5 {
+    padding-bottom: 0.5rem;
+}
+.pb10 {
+    padding-bottom: 1rem;
+}
+.pb15 {
+    padding-bottom: 1.5rem;
+}
+.pb20 {
+    padding-bottom: 2rem;
+}
+.pb25 {
+    padding-bottom: 2.5rem;
+}
+.pb30 {
+    padding-bottom: 3rem;
+}
+
+.pl5 {
+    padding-left: 0.5rem;
+}
+.pl10 {
+    padding-left: 1rem;
+}
+.pl15 {
+    padding-left: 1.5rem;
+}
+.pl20 {
+    padding-left: 2rem;
+}
+.pl25 {
+    padding-left: 2.5rem;
+}
+.pl30 {
+    padding-left: 3rem;
+}
+.pl100 {
+    padding-left: 10rem;
+}
+
+.pr5 {
+    padding-right: 0.5rem;
+}
+.pr10 {
+    padding-right: 1rem;
+}
+.pr15 {
+    padding-right: 1.5rem;
+}
+.pr20 {
+    padding-right: 2rem;
+}
+.pr25 {
+    padding-right: 2.5rem;
+}
+.pr30 {
+    padding-right: 3rem;
+}
+.pr36 {
+    padding-right: 3.6rem;
+}
+
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* 버튼 */
+.btn {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 120%;
+    border-radius: 5.4rem;
+    white-space: nowrap;
+}
+
+.btn.primary {
+    color: var(--black);
+    background: var(--white);
+}
+.btn.primary:active,
+.btn.primary:hover {
+    background: linear-gradient(to top right, #ede7ff, #bffaff);
+}
+
+.btn-secondary {
+    color: var(--white);
+    background: var(--zinc-900);
+}
+
+.btn.app01 {
+    background: url(/assets/images/ico_playstore.svg) var(--white) no-repeat left 3.1rem center;
+    padding: 1.6rem 3.1rem 1.6rem 6.1rem;
+}
+.btn.app01:active,
+.btn.app01:hover {
+    background: url(/assets/images/ico_playstore.svg) no-repeat left 3.1rem center, linear-gradient(to top right, #ede7ff, #bffaff);
+}
+
+.btn.app02 {
+    background: url(/assets/images/ico_apple.svg) var(--white) no-repeat left 3.1rem center;
+    padding: 1.6rem 3.1rem 1.6rem 6.1rem;
+}
+.btn.app02:active,
+.btn.app02:hover {
+    background: url(/assets/images/ico_apple.svg) no-repeat left 3.1rem center, linear-gradient(to top right, #ede7ff, #bffaff);
+}
+
+.btn.effect {
+    box-shadow: 0px 4px 12px 0px rgba(0, 194, 255, 0.6), 0px 2px 14px 0px rgba(211, 36, 255, 0.6);
+}

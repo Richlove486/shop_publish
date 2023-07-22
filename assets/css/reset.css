@@ -13,6 +13,7 @@ figure,
 fieldset,
 legend,
 textarea,
+button,
 pre,
 iframe,
 hr,
@@ -54,12 +55,14 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    font-family: 'Pretendard' !important;
 }
 
 img,
 video {
     height: auto;
     max-width: 100%;
+    display: block;
 }
 
 iframe {
@@ -74,4 +77,10 @@ table {
 td,
 th {
     padding: 0;
+}
+
+button {
+    appearance: none;
+    border: 0;
+    outline: 0;
 }

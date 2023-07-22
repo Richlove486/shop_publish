@@ -17,5 +17,131 @@
 
     --primary01: #62e7d8;
     --primary02: #a54bff;
-    
 }
+
+/* 헤더 */
+header .btn-menu {
+    background: url(/assets/images/ico_menu.svg) no-repeat center center;
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+header .btn-share {
+    background: url(/assets/images/ico_share.svg) no-repeat center center;
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+/* 메인 */
+
+.main01 {
+    max-width: 98rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+    .main01 {
+        height: 50rem;
+    }
+}
+
+.m01-content02 {
+    opacity: 0.5;
+    animation: 30s loop infinite linear;
+    overflow: visible;
+}
+@media screen and (min-width: 540px) {
+    .m01-content02 {
+        animation: none;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 992px) {
+    .m01-content01,
+    .m01-content02 {
+        max-width: 32rem;
+    }
+}
+@keyframes loop {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.m01-content02 div {
+    width: 10rem;
+    height: 4rem;
+}
+.m01-content02 .logo01 {
+    background: url(/assets/images/ico_logo1.svg) no-repeat center center;
+}
+.m01-content02 .logo02 {
+    background: url(/assets/images/ico_logo2.svg) no-repeat center center;
+}
+.m01-content02 .logo03 {
+    background: url(/assets/images/ico_logo3.svg) no-repeat center center;
+}
+.m01-content02 .logo04 {
+    background: url(/assets/images/ico_logo4.svg) no-repeat center center;
+}
+.m01-content02 .logo05 {
+    background: url(/assets/images/ico_logo5.svg) no-repeat center center;
+}
+
+.m01-content03 {
+    width: 36rem;
+    height: 36rem;
+    margin-top: 4rem;
+    overflow-x: visible;
+    position: relative;
+}
+.m01-content03::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 8.5rem;
+    background: linear-gradient(360deg, #000, #000, #00000000);
+}
+
+@media screen and (min-width: 425px) {
+    .m01-content03 {
+        width: 50rem;
+        height: 50rem;
+        margin-top: 5rem;
+    }
+}
+.m01-content03 .hero-bg01 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.m01-content03 .hero-bg01 img {
+    margin: 0 auto;
+    width: 15.8rem;
+}
+@media screen and (min-width: 425px) {
+    .m01-content03 .hero-bg01 img {
+        width: auto;
+    }
+}
+@media screen and (min-width: 992px) {
+    .m01-content03 {
+        margin-top: 0;
+        margin-left: 2.4rem;
+    }
+}
+.m01-content03 .hero-bg02,
+.m01-content03 .hero-bg03 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* 푸터 */
