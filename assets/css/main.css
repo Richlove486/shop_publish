@@ -21,13 +21,13 @@
 
 /* 헤더 */
 header .btn-menu {
-    background: url(../../assets/images/ico_menu.svg) no-repeat center center;
+    background: url(../images/ico_menu.svg) no-repeat center center;
     width: 3.6rem;
     height: 3.6rem;
 }
 
 header .btn-share {
-    background: url(../../assets/images/ico_share.svg) no-repeat center center;
+    background: url(../images/ico_share.svg) no-repeat center center;
     width: 3.6rem;
     height: 3.6rem;
 }
@@ -74,19 +74,19 @@ header .btn-share {
     height: 4rem;
 }
 .m01-content02 .logo01 {
-    background: url(../../assets/images/ico_logo1.svg) no-repeat center center;
+    background: url(../images/ico_logo1.svg) no-repeat center center;
 }
 .m01-content02 .logo02 {
-    background: url(../../assets/images/ico_logo2.svg) no-repeat center center;
+    background: url(../images/ico_logo2.svg) no-repeat center center;
 }
 .m01-content02 .logo03 {
-    background: url(../../assets/images/ico_logo3.svg) no-repeat center center;
+    background: url(../images/ico_logo3.svg) no-repeat center center;
 }
 .m01-content02 .logo04 {
-    background: url(../../assets/images/ico_logo4.svg) no-repeat center center;
+    background: url(../images/ico_logo4.svg) no-repeat center center;
 }
 .m01-content02 .logo05 {
-    background: url(../../assets/images/ico_logo5.svg) no-repeat center center;
+    background: url(../images/ico_logo5.svg) no-repeat center center;
 }
 
 .m01-content03 {

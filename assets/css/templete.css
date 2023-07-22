@@ -195,21 +195,21 @@
 }
 
 .btn.app01 {
-    background: url(../../assets/images/ico_playstore.svg) var(--white) no-repeat left 3.1rem center;
+    background: url(../images/ico_playstore.svg) var(--white) no-repeat left 3.1rem center;
     padding: 1.6rem 3.1rem 1.6rem 6.1rem;
 }
 .btn.app01:active,
 .btn.app01:hover {
-    background: url(../../assets/images/ico_playstore.svg) no-repeat left 3.1rem center, linear-gradient(to top right, #ede7ff, #bffaff);
+    background: url(../images/ico_playstore.svg) no-repeat left 3.1rem center, linear-gradient(to top right, #ede7ff, #bffaff);
 }
 
 .btn.app02 {
-    background: url(../../assets/images/ico_apple.svg) var(--white) no-repeat left 3.1rem center;
+    background: url(../images/ico_apple.svg) var(--white) no-repeat left 3.1rem center;
     padding: 1.6rem 3.1rem 1.6rem 6.1rem;
 }
 .btn.app02:active,
 .btn.app02:hover {
-    background: url(../../assets/images/ico_apple.svg) no-repeat left 3.1rem center, linear-gradient(to top right, #ede7ff, #bffaff);
+    background: url(../images/ico_apple.svg) no-repeat left 3.1rem center, linear-gradient(to top right, #ede7ff, #bffaff);
 }
 
 .btn.effect {
