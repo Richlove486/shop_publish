@@ -52,10 +52,9 @@ header .btn-share {
     animation: 30s loop infinite linear;
     overflow: visible;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 768px) {
     .m01-content02 {
         animation: none;
-        overflow: hidden;
     }
 }
 @media screen and (min-width: 992px) {
@@ -109,39 +108,20 @@ header .btn-share {
 
 @media screen and (min-width: 425px) {
     .m01-content03 {
-        width: 50rem;
-        height: 50rem;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
         margin-top: 5rem;
     }
 }
-.m01-content03 .hero-bg01 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.m01-content03 .hero-bg01 img {
-    margin: 0 auto;
-    width: 15.8rem;
-}
-@media screen and (min-width: 425px) {
-    .m01-content03 .hero-bg01 img {
-        width: auto;
-    }
-}
+
 @media screen and (min-width: 992px) {
     .m01-content03 {
         margin-top: 0;
         margin-left: 2.4rem;
     }
 }
-.m01-content03 .hero-bg02,
-.m01-content03 .hero-bg03 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
+
+
 
 /* 푸터 */
