@@ -82,9 +82,15 @@ h2,
 
 h3,
 .h3 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 120%;
+}
+@media (min-width: 992px) {
+    h3,
+    .h3 {
+        font-size: 2.4rem;
+    }
 }
 
 h4,
@@ -132,11 +138,7 @@ h4,
     color: var(--zinc-500);
 }
 
-.text-gradi {
-    background: linear-gradient(to right top, #62e7d8, #a54bff);
-    color: transparent;
-    -webkit-background-clip: text;
-}
+
 
 /* 텍스트 굵기 */
 

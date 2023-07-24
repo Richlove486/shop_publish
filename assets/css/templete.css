@@ -1,3 +1,6 @@
+.mt4 {
+    margin-top: 0.4rem;
+}
 .mt5 {
     margin-top: 0.5rem;
 }
@@ -13,14 +16,26 @@
 .mt20 {
     margin-top: 2rem;
 }
+.mt24 {
+    margin-top: 2.4rem;
+}
 .mt25 {
     margin-top: 2.5rem;
 }
 .mt30 {
     margin-top: 3rem;
 }
+.mt40 {
+    margin-top: 4rem;
+}
 .mt70 {
     margin-top: 7rem;
+}
+.mt80 {
+    margin-top: 8rem;
+}
+.mt100 {
+    margin-top: 10rem;
 }
 
 .mb5 {
@@ -81,6 +96,11 @@
 }
 .mr30 {
     margin-right: 3rem;
+}
+
+.mtb10 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .pt5 {
@@ -165,9 +185,38 @@
     padding-right: 3.6rem;
 }
 
+.ptb10 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.prl12 {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+/* 보더 래디우스 */
+.br16 {
+    border-radius: 1.6rem;
+}
+
+/* 갭 */
+.gap8 {
+    gap: 0.8rem !important;
+}
+.gap10 {
+    gap: 1rem !important;
+}
+.gap50 {
+    gap: 5rem !important;
+}
+
 .wrap {
     width: 100%;
     margin: 0 auto;
+}
+
+.max780{
+    max-width: 82rem;
 }
 
 /* 버튼 */
@@ -189,7 +238,7 @@
     background: linear-gradient(to top right, #ede7ff, #bffaff);
 }
 
-.btn-secondary {
+.btn.secondary {
     color: var(--white);
     background: var(--zinc-900);
 }
@@ -214,4 +263,22 @@
 
 .btn.effect {
     box-shadow: 0px 4px 12px 0px rgba(0, 194, 255, 0.6), 0px 2px 14px 0px rgba(211, 36, 255, 0.6);
+}
+
+.ellipsis2 {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.ellipsis3 {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
