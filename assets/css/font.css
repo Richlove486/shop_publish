@@ -138,7 +138,13 @@ h4,
     color: var(--zinc-500);
 }
 
-
+/* 텍스트 사이즈 */
+.fs-14{
+    font-size: 1.4rem;
+}
+.fs-24 {
+    font-size: 2.4rem;
+}
 
 /* 텍스트 굵기 */
 
