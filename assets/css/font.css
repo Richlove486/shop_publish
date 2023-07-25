@@ -106,14 +106,8 @@ h4,
     line-height: 150%;
 }
 
-@media (min-width: 992px) {
-    .text-desc1 {
-        font-size: 2rem;
-    }
-}
-
 .text-desc2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
     line-height: 150%;
 }
@@ -122,6 +116,22 @@ h4,
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 150%;
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
+    .text-desc1 {
+        font-size: 2rem;
+    }
+
+    .text-desc2 {
+        font-size: 1.6rem;
+    }
+    .text-gradi {
+        font-size: 1.4rem;
+    }
 }
 
 /* 텍스트 컬러 */
@@ -139,7 +149,7 @@ h4,
 }
 
 /* 텍스트 사이즈 */
-.fs-14{
+.fs-14 {
     font-size: 1.4rem;
 }
 .fs-24 {

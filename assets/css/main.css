@@ -128,13 +128,7 @@ header .btn-share {
 
 /* 섹션02 아티스트 스토리 */
 
-.text-gradi {
-    background: linear-gradient(to right, var(--primary01), var(--primary02));
-    color: transparent;
-    -webkit-background-clip: text;
-    font-size: 1.4rem;
-    font-weight: 500;
-}
+
 
 .mySwiper::after {
     content: '';
@@ -192,7 +186,7 @@ header .btn-share {
     flex-direction: column;
     gap: 1.6rem;
 }
-.ticket_inner .ticket_list li{
+.ticket_inner .ticket_list li {
     color: var(--white);
     font-size: 1.4rem;
     font-weight: 500;
