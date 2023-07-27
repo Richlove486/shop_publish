@@ -128,8 +128,6 @@ header .btn-share {
 
 /* 섹션02 아티스트 스토리 */
 
-
-
 .mySwiper::after {
     content: '';
     position: absolute;
@@ -170,6 +168,45 @@ header .btn-share {
 }
 
 /* 섹션03 스토리 보기 */
+
+.story_title {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 140%;
+    color: var(--zinc-200);
+}
+.story_desc{
+    font-size: 1.2rem;
+    line-height: 140%;
+    color: var(--zinc-500);
+}
+.story_thumb{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.story_thumb .story_thumb_img{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+.story_thumb p{
+    font-size: 1.4rem;
+    color: var(--zinc-500);
+}
+.story_thumb.active .story_thumb_img{
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.story_thumb.active p {
+    color: var(--zinc-200);
+}
+@media screen and (min-width: 992px) {
+    .story_title {
+        font-size: 2.4rem;
+    }
+    .story_desc{
+        font-size: 2rem;
+    }
+}
 
 /* 섹션04 이용권 추천 */
 .box.ticket {

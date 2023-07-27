@@ -84,3 +84,7 @@ button {
     border: 0;
     outline: 0;
 }
+
+em {
+    font-style: normal;
+}

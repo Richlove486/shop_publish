@@ -9520,6 +9520,9 @@ fieldset:disabled .btn {
     .gap-md-4 {
         gap: 1.5rem !important;
     }
+    .gap-md-20 {
+        gap: 2rem !important;
+    }
     .gap-md-5 {
         gap: 3rem !important;
     }
