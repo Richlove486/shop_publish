@@ -117,8 +117,12 @@ h4,
     font-weight: 400;
     line-height: 150%;
 }
-
-@media screen and (min-width: 992px) {
+.text-gradi {
+    background: linear-gradient(to right, var(--primary01), var(--primary02));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 @media (min-width: 992px) {
