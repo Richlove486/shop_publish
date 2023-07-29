@@ -174,7 +174,7 @@ header .btn-share {
 .gallery_main {
     height: 43.8rem;
 }
-.gallery_main .d-flex{
+.gallery_main .d-flex {
     max-width: 12rem;
 }
 .gallery_title {
@@ -223,7 +223,7 @@ header .btn-share {
     .gallery_main {
         height: 54rem;
     }
-    .gallery_main .d-flex{
+    .gallery_main .d-flex {
         max-width: unset;
     }
     .gallery_title {
@@ -265,5 +265,32 @@ header .btn-share {
     line-height: 1.5;
     background: url(../images/ico_check.svg) no-repeat left center;
     padding-left: 2.4rem;
+}
+
+/* 섹션05 커머스 */
+
+.commerce_video {
+    height: 19rem;
+    border: 1px solid var(--zinc-800);
+    border-radius: 1.6rem;
+}
+.commerce_wrap {
+}
+.commerce_wrap .swiper-slide {
+    /* padding: 2.4rem 1.6rem 0 1.6rem; */
+}
+
+@media screen and (min-width: 768px) {
+    .commerce_video {
+        height: 34.2rem;
+    }
+}
+
+/* 섹션06 앱다운로드 */
+.main06 > div {
+    padding: 3rem 2rem;
+    border-radius: 1.6rem;
+    background: url(../images/img_appstore.png) no-repeat center center / cover, rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
 }
 /* 푸터 */

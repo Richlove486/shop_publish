@@ -33,14 +33,10 @@ $(document).ready(function () {
     // 섹션03 갤러리 썸네일
     var thumbSwiper = new Swiper('.gallery_thumb', {
         spaceBetween: 0,
-        allowTouchMove: true,
         loop: true,
         breakpoints: {
             768: {
                 direction: 'vertical',
-            },
-            480: {
-                // loopedSlides: 2.5,
             },
         },
     });
@@ -52,22 +48,48 @@ $(document).ready(function () {
         },
         slideToClickedSlide: true,
         loop: true,
-        // breakpoints: {
-        //     1024: {
-        //         slidesPerView: 5, // 한 화면에 보일 섬네일 개수
-        //         loopedSlides: 5 // 위 섬네일 개수와 동일한 수치 설정
-        //     },
-        //     768: {
-        //         slidesPerView: 3.5,
-        //         loopedSlides: 3.5
-        //     },
-        //     480: {
-        //         slidesPerView: 2.5,
-        //         loopedSlides: 2.5
-        //     }
-        // }
         thumbs: {
             swiper: thumbSwiper,
         },
     });
+
+    // 섹션05 커머스 글귀
+    var videoSwiper = new Swiper('.commerce_wrap', {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        loop: true,
+        loopedSlides: 3,
+        watchSlidesProgress: true,
+        slideToClickedSlide: true,
+        observer: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1.6,
+                loopedSlides: 1.6,
+                spaceBetween: 16,
+            },
+            500: {
+                slidesPerView: 2.5,
+                loopedSlides: 2.5,
+                spaceBetween: 16,
+            },
+            1024: {
+                slidesPerView: 3.5,
+                loopedSlides: 3.5,
+                spaceBetween: 16,
+            },
+        },
+    });
+    // 섹션05 커머스 비디오
+    var videoMainSwiper = new Swiper('.commerce_video', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        // allowTouchMove: false,
+        loop: true,
+        // thumbs: {
+        //     swiper: videoSwiper,
+        // },
+    });
+    videoSwiper.controller.control = videoMainSwiper;
+    videoMainSwiper.controller.control = videoSwiper;
 });

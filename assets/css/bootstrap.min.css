@@ -667,6 +667,8 @@ progress {
     .container-md,
     .container-sm {
         max-width: 720px;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 @media (min-width: 992px) {
@@ -675,6 +677,8 @@ progress {
     .container-md,
     .container-sm {
         max-width: 980px;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 }
 @media (min-width: 1200px) {
@@ -7863,7 +7867,7 @@ fieldset:disabled .btn {
     line-height: 1 !important;
 }
 .lh-sm {
-    line-height: 1.25 !important;
+    line-height: 1.4 !important;
 }
 .lh-base {
     line-height: 1.5 !important;
@@ -9871,10 +9875,10 @@ fieldset:disabled .btn {
     .mt-lg-5 {
         margin-top: 3rem !important;
     }
-    .mt-lg-30{
+    .mt-lg-30 {
         margin-top: 3rem !important;
     }
-    .mt-lg-70{
+    .mt-lg-70 {
         margin-top: 7rem !important;
     }
     .mt-lg-100 {
