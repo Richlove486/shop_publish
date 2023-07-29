@@ -54,7 +54,9 @@ header .btn-share {
 }
 
 .m01-content02 {
-    animation: 30s loop infinite linear;
+    width: 50rem;
+
+    animation: 10s loop infinite linear;
 }
 @media screen and (min-width: 768px) {
     .m01-content02 {
@@ -72,7 +74,7 @@ header .btn-share {
         transform: translateX(-100%);
     }
 }
-.m01-content02 div {
+.m01-content02 .logo {
     width: 10rem;
     height: 4rem;
 }
@@ -169,42 +171,75 @@ header .btn-share {
 
 /* 섹션03 스토리 보기 */
 
-.story_title {
+.gallery_main {
+    height: 43.8rem;
+}
+.gallery_main .d-flex{
+    max-width: 12rem;
+}
+.gallery_title {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 140%;
     color: var(--zinc-200);
 }
-.story_desc{
+.gallery_desc {
     font-size: 1.2rem;
     line-height: 140%;
     color: var(--zinc-500);
 }
-.story_thumb{
+.gallery_thumb_inner {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1.2rem;
+    width: 9.6rem;
 }
-.story_thumb .story_thumb_img{
+.gallery_thumb_inner .gallery_thumb_img {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 100px;
 }
-.story_thumb p{
+.gallery_thumb_inner p {
     font-size: 1.4rem;
     color: var(--zinc-500);
+    text-align: center;
 }
-.story_thumb.active .story_thumb_img{
-    border: 2px solid rgba(255, 255, 255, 0.8);
+.gallery_thumb {
+    cursor: pointer;
+    bottom: -1.2rem;
 }
-.story_thumb.active p {
+.gallery_thumb .swiper-slide {
+    height: 100% !important;
+    width: fit-content !important;
+}
+.gallery_thumb .swiper-slide-thumb-active .gallery_thumb_img {
+    /* border: 2px solid rgba(255, 255, 255, 0.8); */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+}
+.gallery_thumb .swiper-slide-thumb-active p {
     color: var(--zinc-200);
 }
-@media screen and (min-width: 992px) {
-    .story_title {
+@media screen and (min-width: 768px) {
+    .gallery_main {
+        height: 54rem;
+    }
+    .gallery_main .d-flex{
+        max-width: unset;
+    }
+    .gallery_title {
         font-size: 2.4rem;
     }
-    .story_desc{
+    .gallery_desc {
         font-size: 2rem;
+    }
+    .gallery_thumb {
+        flex-direction: row;
+        bottom: 0rem;
+        width: fit-content !important;
+    }
+    .gallery_thumb_inner {
+        flex-direction: row;
+        width: 100%;
     }
 }
 

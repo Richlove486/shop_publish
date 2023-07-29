@@ -37,8 +37,14 @@
 .mt80 {
     margin-top: 8rem;
 }
+.mt90 {
+    margin-top: 9rem;
+}
 .mt100 {
     margin-top: 10rem;
+}
+.mt120 {
+    margin-top: 12rem;
 }
 
 .mb5 {
@@ -77,6 +83,9 @@
 }
 .ml30 {
     margin-left: 3rem;
+}
+.ml36 {
+    margin-left: 3.6rem;
 }
 .ml60 {
     margin-left: 6rem;
@@ -209,6 +218,9 @@
 .gap10 {
     gap: 1rem !important;
 }
+.gap20 {
+    gap: 2rem !important;
+}
 .gap50 {
     gap: 5rem !important;
 }
@@ -244,6 +256,10 @@
 .btn.secondary {
     color: var(--white);
     background: var(--zinc-900);
+}
+.btn.secondary:active,
+.btn.secondary:hover{
+    background: var(--zinc-700);
 }
 
 .btn.app01 {

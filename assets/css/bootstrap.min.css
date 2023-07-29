@@ -7132,6 +7132,9 @@ fieldset:disabled .btn {
 .end-0 {
     right: 0 !important;
 }
+.end-m20 {
+    right: -2rem !important;
+}
 .end-50 {
     right: 50% !important;
 }
@@ -9300,6 +9303,9 @@ fieldset:disabled .btn {
     }
     .mt-md-5 {
         margin-top: 3rem !important;
+    }
+    .mt-md-120 {
+        margin-top: 12rem !important;
     }
     .mt-md-auto {
         margin-top: auto !important;
