@@ -34,6 +34,7 @@ $(document).ready(function () {
     var thumbSwiper = new Swiper('.gallery_thumb', {
         spaceBetween: 0,
         loop: true,
+        allowTouchMove: false,
         breakpoints: {
             768: {
                 direction: 'vertical',
@@ -56,27 +57,61 @@ $(document).ready(function () {
     // 섹션05 커머스 글귀
     var videoSwiper = new Swiper('.commerce_wrap', {
         slidesPerView: 1,
-        spaceBetween: 16,
+        spaceBetween: 48,
         loop: true,
         loopedSlides: 3,
+        slidesOffsetAfter: 16,
+        slidesOffsetBefore: 16,
         watchSlidesProgress: true,
         slideToClickedSlide: true,
         observer: true,
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
+        // pagination: {
+        //     el: '.commerce_wrap .swiper-pagination',
+        //     type: 'progressbar',
+        //     clickable: false,
+        //     renderBullet: function (index, className) {
+        //         return '<span class="' + className + '">' + (index + 1) + '</span>';
+        //     },
+        // },
+
+        // on: {
+        //     init: function () {
+        //         $('.swiper-progress-bar').removeClass('animate');
+        //         $('.swiper-progress-bar').removeClass('active');
+        //         $('.swiper-progress-bar').eq(0).addClass('animate');
+        //         $('.swiper-progress-bar').eq(0).addClass('active');
+        //     },
+        //     slideChangeTransitionStart: function () {
+        //         $('.swiper-progress-bar').removeClass('animate');
+        //         $('.swiper-progress-bar').removeClass('active');
+        //         $('.swiper-progress-bar').eq(0).addClass('active');
+        //     },
+        //     slideChangeTransitionEnd: function () {
+        //         $('.swiper-progress-bar').eq(0).addClass('animate');
+        //     },
+        // },
         breakpoints: {
             320: {
-                slidesPerView: 1.6,
-                loopedSlides: 1.6,
-                spaceBetween: 16,
+                slidesPerView: 1.5,
+                loopedSlides: 1.5,
+                spaceBetween: 48,
             },
             500: {
-                slidesPerView: 2.5,
-                loopedSlides: 2.5,
-                spaceBetween: 16,
+                slidesPerView: 2.9,
+                loopedSlides: 2.9,
+                spaceBetween: 48,
             },
             1024: {
-                slidesPerView: 3.5,
-                loopedSlides: 3.5,
-                spaceBetween: 16,
+                slidesPerView: 3.1,
+                loopedSlides: 8,
+                spaceBetween: 48,
+                allowTouchMove: false,
+                touchMoveStopPropagation: true,
+                roundLengths: true,
             },
         },
     });
@@ -84,12 +119,12 @@ $(document).ready(function () {
     var videoMainSwiper = new Swiper('.commerce_video', {
         slidesPerView: 1,
         spaceBetween: 0,
-        // allowTouchMove: false,
         loop: true,
         // thumbs: {
         //     swiper: videoSwiper,
         // },
     });
+
     videoSwiper.controller.control = videoMainSwiper;
     videoMainSwiper.controller.control = videoSwiper;
 });

@@ -274,12 +274,22 @@ header .btn-share {
     border: 1px solid var(--zinc-800);
     border-radius: 1.6rem;
 }
+.commerce_video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .commerce_wrap {
 }
 .commerce_wrap .swiper-slide {
     /* padding: 2.4rem 1.6rem 0 1.6rem; */
 }
-
+.commerce_wrap .swiper-slide .progress {
+    height: 0.2rem;
+    background: var(--zinc-700);
+}
+.commerce_wrap .swiper-slide .progress .progress-bar {
+}
 @media screen and (min-width: 768px) {
     .commerce_video {
         height: 34.2rem;
