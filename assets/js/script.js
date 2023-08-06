@@ -89,4 +89,43 @@ $(document).ready(function () {
 
     videoMainSwiper.controller.control = videoSwiper;
     videoSwiper.controller.control = videoMainSwiper;
+
+    // 모바일 메뉴
+    var $menu = $('.m-menu li a'),
+        $contents = $('section'),
+        $doc = $('html, body');
+    $(function () {
+        // 해당 섹션으로 스크롤 이동
+        $menu.on('click', 'a', function (e) {
+            var $target = $(this).parent(),
+                idx = $target.index(),
+                section = $contents.eq(idx),
+                offsetTop = section.offset().top;
+            $doc.stop().animate(
+                {
+                    scrollTop: offsetTop,
+                },
+                800
+            );
+            return false;
+        });
+
+        // 클래스 추가
+        $(window).scroll(function () {
+            var scltop = $(window).scrollTop();
+            $.each($contents, function (idx, item) {
+                var $target = $contents.eq(idx),
+                    i = $target.index(),
+                    targetTop = $target.offset().top;
+
+                if (targetTop <= scltop) {
+                    $menu.removeClass('active');
+                    $menu.eq(idx).addClass('active');
+                }
+                if (!(200 <= scltop)) {
+                    $menu.removeClass('active');
+                }
+            });
+        });
+    });
 });

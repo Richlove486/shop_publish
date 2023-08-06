@@ -58,6 +58,14 @@ header {
 
 /* 메인 */
 
+.main01,
+.main02,
+.main03,
+.main04,
+.main05 {
+    scroll-margin-top: 10rem;
+}
+
 main {
     padding-bottom: 10rem;
 }
@@ -168,11 +176,11 @@ main {
     height: 4.8rem;
     background: url(../images/ico_right_gr.svg) no-repeat center center var(--zinc-800);
     border-radius: 1.6rem;
-    right: -0.2rem;
+    right: -1.6rem;
+    transform: translateY(-50%);
 }
 
 .box {
-    /* border: 1px solid var(--zinc-800); */
     box-shadow: inset 0px 0px 0px 1px var(--zinc-800);
     background: linear-gradient(to bottom, var(--zinc-900), var(--zinc-900), #18181b00);
 }
@@ -191,8 +199,6 @@ main {
     width: 2.4rem;
     height: 2.4rem;
 }
-
-/* 섹션03 스토리 보기 */
 
 .gallery_main {
     height: 43.8rem;
@@ -266,7 +272,7 @@ main {
     }
 }
 
-/* 섹션04 이용권 추천 */
+/* 섹션03 이용권 */
 .box.ticket {
     padding: 2rem;
 }
@@ -290,7 +296,7 @@ main {
     padding-left: 2.4rem;
 }
 
-/* 섹션05 커머스 */
+/* 섹션04 커머스 */
 
 .commerce_video {
     height: 19rem;
@@ -361,7 +367,7 @@ main {
     }
 }
 
-/* 섹션06 앱다운로드 */
+/* 섹션05 앱다운로드 */
 .main06 > div {
     padding: 3rem 2rem;
     border-radius: 1.6rem;
