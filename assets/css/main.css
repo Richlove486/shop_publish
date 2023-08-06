@@ -40,6 +40,10 @@ header .btn-share {
 
 /* 메인 */
 
+main{
+    padding-bottom: 10rem;
+}
+
 .main01 {
     max-width: 98rem;
     margin: 0 auto;
@@ -279,7 +283,15 @@ header .btn-share {
     height: 100%;
     object-fit: cover;
 }
-.commerce_wrap {
+.commerce_wrap::after {
+    width: 4rem;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #000, #00000000);
+    z-index: 1;
 }
 .commerce_wrap .swiper-slide {
     /* padding: 2.4rem 1.6rem 0 1.6rem; */
@@ -287,12 +299,33 @@ header .btn-share {
 .commerce_wrap .swiper-slide .progress {
     height: 0.2rem;
     background: var(--zinc-700);
+    position: relative;
 }
 .commerce_wrap .swiper-slide .progress .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0.2rem;
+    background: var(--zinc-300);
 }
+.commerce_wrap .swiper-slide .progress .progress-bar.active {
+    animation: progress 5s linear;
+}
+@keyframes progress {
+    100% {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .commerce_video {
         height: 34.2rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .commerce_wrap::after {
+        content: none;
     }
 }
 

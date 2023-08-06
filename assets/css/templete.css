@@ -261,7 +261,7 @@
     background: var(--zinc-900);
 }
 .btn.secondary:active,
-.btn.secondary:hover{
+.btn.secondary:hover {
     background: var(--zinc-700);
 }
 
@@ -283,6 +283,25 @@
     background: url(../images/ico_apple.svg) no-repeat left 3.1rem center, linear-gradient(to top right, #ede7ff, #bffaff);
 }
 
+@media screen and (max-width: 359px) {
+    .btn.app01 {
+        background: url(../images/ico_playstore.svg) var(--white) no-repeat left 1.6rem center;
+        padding: 1.6rem 2.1rem 1.6rem 4.1rem;
+    }
+    .btn.app01:active,
+    .btn.app01:hover {
+        background: url(../images/ico_playstore.svg) no-repeat left 1.6rem center, linear-gradient(to top right, #ede7ff, #bffaff);
+    }
+
+    .btn.app02 {
+        background: url(../images/ico_apple.svg) var(--white) no-repeat left 1.6rem center;
+        padding: 1.6rem 2.1rem 1.6rem 4.1rem;
+    }
+    .btn.app02:active,
+    .btn.app02:hover {
+        background: url(../images/ico_apple.svg) no-repeat left 1.6rem center, linear-gradient(to top right, #ede7ff, #bffaff);
+    }
+}
 .btn.gradi {
     border-radius: 0;
     width: 100%;
