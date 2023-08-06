@@ -18,11 +18,12 @@
         <script src="assets/js/swiper-bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
     </head>
-    <body style="background-color: #000">
+    <body>
         <div class="wrap">
             <!-- 헤더 -->
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-between justify-content-md-start py-4 px-4 px-md-5 sticky-top">
-                <button class="btn-menu d-md-none"></button>
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-between justify-content-md-start py-3 px-4 px-md-5 sticky-top">
+                <button class="btn-menu d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></button>
+
                 <h1 class="logo">
                     <a href="#">
                         <img src="assets/images/logo.svg" alt="로고" />
@@ -41,10 +42,35 @@
                 </ul>
                 <button class="btn-share d-md-none"></button>
             </header>
+            <!-- 모바일 메뉴 -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling">
+                <div class="offcanvas-header py-3 px-4">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <a href="#">
+                        <img src="assets/images/logo.svg" alt="로고" />
+                    </a>
+                    <button class="btn-share d-md-none"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex align-content-center justify-content-center flex-wrap h-100">
+                        <ul class="m-menu d-flex flex-column gap20">
+                            <li>
+                                <a href="#main02" class="active">스토리</a>
+                            </li>
+                            <li>
+                                <a href="#main04">이용권</a>
+                            </li>
+                            <li>
+                                <a href="#main05">커머스</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             <!-- 메인 -->
             <main>
-                <section class="main01 d-flex flex-sm-column flex-wrap justify-content-center align-content-center">
+                <section id="main01" class="main01 d-flex flex-sm-column flex-wrap justify-content-center align-content-center">
                     <div class="m01-content01">
                         <h2 class="text-white text-center text-lg-start">
                             아티스트의 새로운<br />
@@ -90,7 +116,7 @@
                 </section>
 
                 <!-- 섹션02 스토리  -->
-                <section class="main02 container max780 mt80 mt-lg-100 position-relative">
+                <section id="main02" class="main02 container max780 mt80 mt-lg-100 position-relative">
                     <div class="text-center">
                         <strong class="text-gradi">아티스트 스토리</strong>
                         <h3 class="text-white mt10">음원 발매는 사운드큐에서</h3>
@@ -220,43 +246,8 @@
                 </section>
 
                 <!-- 섹션03 스와이퍼 -->
-                <section class="main03 container max780 mt30 mt-lg-0">
+                <section id="main03" class="main03 container max780 mt30 mt-lg-0">
                     <div class="row">
-                        <!-- <div class="col-6 col-md-8 col-lg-7">
-                            <div>
-                                <em class="gallery_title">"직업으로 음악을 할 수 있을 줄 몰랐어요."</em>
-                                <p class="gallery_desc mt10">사운드 큐에서 그 꿈을 이룰 수 있었습니다.</p>
-                                <button class="btn secondary mt30">스토리 보기</button>
-                            </div>
-
-                            <div class="d-flex flex-md-column gap8 gap-md-20">
-                                <div class="gallery_thumb active">
-                                    <div class="gallery_thumb_img">
-                                        <img src="assets/images/img_person01_thumb.png" alt="">
-                                    </div>
-                                    <p>Cameron Williamson</p>
-                                </div>
-                                <div class="gallery_thumb">
-                                    <div class="gallery_thumb_img">
-                                        <img src="assets/images/img_person02_thumb.png" alt="">
-                                    </div>
-                                    <p>Leslie Alexander</p>
-                                </div>
-                                <div class="gallery_thumb">
-                                    <div class="gallery_thumb_img">
-                                        <img src="assets/images/img_person03_thumb.png" alt="">
-                                    </div>
-                                    <p>Courtney Henry</p>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-5">
-                            <div class="">
-                                <img src="assets/images/img_person01.png" alt="" />
-                            </div>
-                        </div> -->
-
                         <div class="col-12 position-relative">
                             <div class="swiper gallery_main">
                                 <div class="swiper-wrapper">
@@ -331,7 +322,7 @@
                 </section>
 
                 <!-- 섹션04 이용권 -->
-                <section class="main04 container max780 mt100">
+                <section id="main04" class="main04 container max780 mt100">
                     <div class="text-center">
                         <strong class="text-gradi">이용권 추천</strong>
                         <h3 class="text-white mt10">지금 가입시 3개월 무료</h3>
@@ -378,7 +369,7 @@
                 </section>
 
                 <!-- 섹션05 커머스 -->
-                <section class="main05 container max780 mt100">
+                <section id="main05" class="main05 container max780 mt100">
                     <div class="text-center">
                         <strong class="text-gradi">아티스트 커머스</strong>
                         <h3 class="text-white mt10">상품제작 판매에서 프로모션까지</h3>
@@ -470,8 +461,6 @@
                                             음악에서 시작하여 나만의 브랜드를 만들고 싶다는 꿈을 이룬 클레어님의 스토리를 지금 만나보세요.
                                         </p>
                                     </div>
-
-                                    <!-- <div class="swiper-pagination"></div> -->
                                 </div>
                             </div>
                         </div>
@@ -479,7 +468,7 @@
                 </section>
 
                 <!-- 섹션06 앱다운로드 -->
-                <section class="main06 container-lg mt100">
+                <section id="main06" class="main06 container-lg mt100">
                     <div>
                         <h3 class="text-white text-center lh-sm">
                             지금 팬과 소통하고<br />
@@ -494,13 +483,22 @@
             </main>
 
             <!-- 푸터 -->
-            <footer id="footer">asdfdassfsdfsdfds</footer>
+            <div class="container-lg">
+                <footer class="py-5">
+                    <ul class="nav justify-content-center pb-3 mb-3">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-gray-400">스토리</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-gray-400">이용권</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-gray-400">커머스</a></li>
+                    </ul>
+                    <p class="text-center text-gray-500 fs-14">© 2023 SOUNDQUE, Inc</p>
+                </footer>
+            </div>
 
             <!-- 모바일 앱 다운로드버튼 -->
-
+            <!-- 
             <div class="d-flex d-md-none justify-content-center gap10 position-fixed z-1 w-100" style="padding: 0 2rem; bottom: 2rem">
                 <button class="btn primary effect w-100">앱 다운로드</button>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>

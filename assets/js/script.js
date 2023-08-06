@@ -5,6 +5,10 @@ $(document).ready(function () {
         spaceBetween: 16,
         loop: true,
         loopedSlides: 1,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,

@@ -19,6 +19,10 @@
     --primary02: #a54bff;
 }
 
+.wrap {
+    background-color: #000;
+}
+
 /* 헤더 */
 
 header {
@@ -26,16 +30,30 @@ header {
     backdrop-filter: blur(10px);
 }
 
-header .btn-menu {
-    background: url(../images/ico_menu.svg) no-repeat center center;
-    width: 3.6rem;
-    height: 3.6rem;
+.offcanvas {
+    height: 100dvh;
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
 }
-
-header .btn-share {
-    background: url(../images/ico_share.svg) no-repeat center center;
+.offcanvas .btn-close {
+    background: url(../images/ico_close.svg) no-repeat center center;
     width: 3.6rem;
     height: 3.6rem;
+    padding: 0;
+    opacity: 1;
+}
+.offcanvas-body .m-menu li a {
+    text-decoration: none;
+    font-size: 3.2rem;
+    color: var(--zinc-400);
+    font-weight: 500;
+    line-height: 150%;
+}
+.offcanvas-body .m-menu li a.active {
+    background: linear-gradient(to right, var(--primary01), var(--primary02));
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 /* 메인 */
@@ -351,3 +369,6 @@ main {
     background-blend-mode: multiply;
 }
 /* 푸터 */
+footer ul {
+    border-bottom: 1px solid var(--zinc-800);
+}
