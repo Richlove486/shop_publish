@@ -378,5 +378,5 @@ main {
 
 /* 푸터 */
 footer ul {
-    border-bottom: 1px solid var(--zinc-700); 
+    border-bottom: 1px solid var(--zinc-800);
 }
