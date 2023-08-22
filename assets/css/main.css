@@ -367,3 +367,8 @@ main {
     background: url(../images/img_appstore.png) no-repeat center center / cover, rgba(0, 0, 0, 0.7);
     background-blend-mode: multiply;
 }
+
+/* 푸터 */
+footer ul {
+    border-bottom: 1px solid var(--zinc-800);
+}
