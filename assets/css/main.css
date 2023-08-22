@@ -70,13 +70,6 @@ main {
     padding-bottom: 10rem;
 }
 
-.main01 {
-    max-width: 98rem;
-    margin: 0 auto;
-    margin-top: 10rem;
-    overflow: hidden;
-}
-
 @media screen and (min-width: 992px) {
     .main01 {
         height: 50rem;
@@ -85,7 +78,6 @@ main {
 
 .m01-content02 {
     width: 50rem;
-
     animation: 10s loop infinite linear;
 }
 @media screen and (min-width: 768px) {
@@ -200,12 +192,10 @@ main {
     height: 2.4rem;
 }
 
-<<<<<<< HEAD
 /* 섹션02 갤러리  */
-=======
->>>>>>> c3eeecb64dfaff5d262f8a6b6fb637f9222c229f
 .gallery_main {
-    height: 43.8rem;
+    min-height: 43.8rem;
+
 }
 .gallery_main .d-flex {
     max-width: 12rem;
