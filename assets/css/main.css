@@ -361,7 +361,7 @@ main {
 }
 
 /* 섹션05 앱다운로드 */
-.main06 > div {
+.main05 > div {
     padding: 3rem 2rem;
     border-radius: 1.6rem;
     background: url(../images/img_appstore.png) no-repeat center center / cover, rgba(0, 0, 0, 0.7);
