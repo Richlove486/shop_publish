@@ -40,7 +40,7 @@ $(document).ready(function () {
     var thumbSwiper = new Swiper('.gallery_thumb', {
         spaceBetween: 0,
         loop: true,
-        allowTouchMove: false,
+        allowTouchMove: true,
         slideToClickedSlide: true,
         breakpoints: {
             768: {
@@ -54,7 +54,6 @@ $(document).ready(function () {
         fadeEffect: {
             crossFade: true,
         },
-        // slideToClickedSlide: true,
         loop: true,
         thumbs: {
             swiper: thumbSwiper,
