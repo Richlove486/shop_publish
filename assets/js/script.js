@@ -40,8 +40,7 @@ $(document).ready(function () {
     var thumbSwiper = new Swiper('.gallery_thumb', {
         spaceBetween: 0,
         loop: true,
-        allowTouchMove: true,
-        slideToClickedSlide: true,
+        touchRatio: 0,
         breakpoints: {
             768: {
                 direction: 'vertical',
