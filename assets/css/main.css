@@ -1,0 +1,369 @@
+@charset "utf-8";
+
+:root {
+    /* 색상 */
+    --white: #fff;
+    --black: #000;
+    --zinc-50: #fafafa;
+    --zinc-100: #f4f4f5;
+    --zinc-200: #e4e4e7;
+    --zinc-300: #d4d4d8;
+    --zinc-400: #a1a1aa;
+    --zinc-500: #71717a;
+    --zinc-600: #6b7280;
+    --zinc-700: #3f3f46;
+    --zinc-800: #27272a;
+    --zinc-900: #18181b;
+
+    --primary01: #62e7d8;
+    --primary02: #a54bff;
+}
+
+.wrap {
+    background-color: #000;
+}
+
+/* 헤더 */
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.offcanvas {
+    height: 100dvh;
+    width: 100% !important;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+}
+.offcanvas .btn-close {
+    background: url(../images/ico_close.svg) no-repeat center center;
+    width: 3.6rem;
+    height: 3.6rem;
+    padding: 0;
+    opacity: 1;
+}
+.offcanvas-body .m-menu li a {
+    text-decoration: none;
+    font-size: 3.2rem;
+    color: var(--zinc-400);
+    font-weight: 500;
+    line-height: 150%;
+}
+.offcanvas-body .m-menu li a.active {
+    background: linear-gradient(to right, var(--primary01), var(--primary02));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* 메인 */
+
+.main01,
+.main02,
+.main03,
+.main04,
+.main05 {
+    scroll-margin-top: 10rem;
+}
+
+main {
+    padding-bottom: 10rem;
+}
+
+@media screen and (min-width: 992px) {
+    .main01 {
+        height: 50rem;
+    }
+}
+
+.m01-content02 {
+    width: 50rem;
+    animation: 10s loop infinite linear;
+}
+@media screen and (min-width: 768px) {
+    .m01-content02 {
+        animation: none;
+    }
+}
+@media screen and (min-width: 992px) {
+    .m01-content01,
+    .m01-content02 {
+        max-width: 32rem;
+    }
+}
+@keyframes loop {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.m01-content02 .logo {
+    width: 10rem;
+    height: 4rem;
+}
+.m01-content02 .logo01 {
+    background: url(../images/ico_logo1.svg) no-repeat center center;
+}
+.m01-content02 .logo02 {
+    background: url(../images/ico_logo2.svg) no-repeat center center;
+}
+.m01-content02 .logo03 {
+    background: url(../images/ico_logo3.svg) no-repeat center center;
+}
+.m01-content02 .logo04 {
+    background: url(../images/ico_logo4.svg) no-repeat center center;
+}
+.m01-content02 .logo05 {
+    background: url(../images/ico_logo5.svg) no-repeat center center;
+}
+
+.m01-content03 {
+    width: 36rem;
+    height: 36rem;
+    margin-top: 4rem;
+    overflow-x: visible;
+    position: relative;
+}
+.m01-content03::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 8.5rem;
+    background: linear-gradient(360deg, var(--black), var(--black), #00000000);
+}
+
+@media screen and (min-width: 425px) {
+    .m01-content03 {
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .m01-content03 {
+        margin-top: 0;
+        margin-left: 2.4rem;
+    }
+}
+
+/* 섹션02 아티스트 스토리 */
+
+.mySwiper::after {
+    content: '';
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    width: 4rem;
+    height: 100%;
+    background: linear-gradient(to left, #000, #00000000);
+    z-index: 1;
+}
+
+.main02 .swiper-button-next {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../images/ico_right_gr.svg) no-repeat center center var(--zinc-800);
+    border-radius: 1.6rem;
+    right: -1.6rem;
+    transform: translateY(-50%);
+}
+
+.box {
+    box-shadow: inset 0px 0px 0px 1px var(--zinc-800);
+    background: linear-gradient(to bottom, var(--zinc-900), var(--zinc-900), #18181b00);
+}
+
+.box .box_up img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box .box_down hr {
+    color: var(--zinc-800);
+}
+
+.box .box_down .box_title .btn-play {
+    background: url(../images/ico_play_gr.svg) no-repeat center center;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+/* 섹션02 갤러리  */
+.gallery_main {
+    height: 43.8rem;
+}
+.gallery_main .d-flex {
+    max-width: 12rem;
+}
+.gallery_title {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 140%;
+    color: var(--zinc-200);
+}
+.gallery_desc {
+    font-size: 1.2rem;
+    line-height: 140%;
+    color: var(--zinc-500);
+}
+.gallery_thumb_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    width: 9.6rem;
+}
+.gallery_thumb_inner .gallery_thumb_img {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+.gallery_thumb_inner p {
+    font-size: 1.4rem;
+    color: var(--zinc-500);
+    text-align: center;
+}
+.gallery_thumb {
+    cursor: pointer;
+    bottom: -1.2rem;
+}
+.gallery_thumb .swiper-slide {
+    height: 100% !important;
+    width: fit-content !important;
+}
+.gallery_thumb .swiper-slide-thumb-active .gallery_thumb_img {
+    /* border: 2px solid rgba(255, 255, 255, 0.8); */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+}
+.gallery_thumb .swiper-slide-thumb-active p {
+    color: var(--zinc-200);
+}
+@media screen and (min-width: 768px) {
+    .gallery_main {
+        height: 54rem;
+    }
+    .gallery_main .d-flex {
+        max-width: unset;
+    }
+    .gallery_title {
+        font-size: 2.4rem;
+    }
+    .gallery_desc {
+        font-size: 2rem;
+    }
+    .gallery_thumb {
+        flex-direction: row;
+        bottom: 0rem;
+        width: fit-content !important;
+    }
+    .gallery_thumb_inner {
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+/* 섹션03 이용권 */
+.box.ticket {
+    padding: 2rem;
+}
+.ticket_inner {
+    background: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+.ticket_inner .ticket_list {
+    padding: 2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.ticket_inner .ticket_list li {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background: url(../images/ico_check.svg) no-repeat left center;
+    padding-left: 2.4rem;
+}
+
+/* 섹션04 커머스 */
+
+.commerce_video {
+    height: 19rem;
+    border: 1px solid var(--zinc-800);
+    border-radius: 1.6rem;
+}
+.commerce_video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.commerce_wrap::after {
+    width: 4rem;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #000, #00000000);
+    z-index: 1;
+}
+.commerce_wrap .swiper-slide {
+    padding: 0 1.6rem;
+    width: 35%;
+}
+
+@media screen and (min-width: 320px) {
+    .commerce_wrap .swiper-slide {
+        width: 60%;
+    }
+}
+.commerce_wrap .swiper-slide .progress {
+    height: 0.2rem;
+    background: var(--zinc-700);
+    position: relative;
+}
+.commerce_wrap .swiper-slide .progress .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0.2rem;
+    background: var(--zinc-300);
+}
+.commerce_wrap .swiper-slide .progress .progress-bar.active {
+    animation: progress 5s linear;
+}
+@keyframes progress {
+    100% {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .commerce_video {
+        height: 34.2rem;
+    }
+    .commerce_wrap .swiper-slide {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .commerce_wrap::after {
+        content: none;
+    }
+    .commerce_wrap .swiper-slide {
+        width: 28%;
+    }
+}
+
+/* 섹션05 앱다운로드 */
+.main05 > div {
+    padding: 3rem 2rem;
+    border-radius: 1.6rem;
+    background: url(../images/img_appstore.png) no-repeat center center / cover, rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
