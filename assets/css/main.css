@@ -194,8 +194,7 @@ main {
 
 /* 섹션02 갤러리  */
 .gallery_main {
-    min-height: 43.8rem;
-
+    height: 43.8rem;
 }
 .gallery_main .d-flex {
     max-width: 12rem;
