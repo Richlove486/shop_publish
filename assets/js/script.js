@@ -58,4 +58,33 @@ $(document).ready(function () {
             swiper: thumbSwiper,
         },
     });
+
+        // 섹션05 커머스 글귀
+        var videoSwiper = new Swiper('.commerce_wrap', {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            loop: true,
+            loopedSlides: 3,
+            slideToClickedSlide: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            on: {
+                slideChangeTransitionEnd: function () {
+                    $('.progress-bar').removeClass('active');
+                    $('.swiper-slide-active .progress .progress-bar').addClass('active');
+                },
+            },
+        });
+    
+        // 섹션05 커머스 비디오
+        var videoMainSwiper = new Swiper('.commerce_video', {
+            slidesPerView: 1,
+            loop: true,
+            loopedSlides: 3,
+        });
+    
+        videoMainSwiper.controller.control = videoSwiper;
+        videoSwiper.controller.control = videoMainSwiper;
 });
